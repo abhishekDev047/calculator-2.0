@@ -177,7 +177,7 @@ const Power3 = ()=>{
           a<sup>2</sup>
         </button>
         <button
-          className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black"
+          className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black rounded-md"
           onClick={Power3}
           value={''}
         >
