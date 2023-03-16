@@ -136,6 +136,13 @@ const Power3 = ()=>{
         </button>
         <button
           className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black"
+          value={0}
+          onClick={valueChanger}
+        >
+          0
+        </button>
+        <button
+          className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black"
           onClick={methodChanger}
           value={'+'}
         >
@@ -176,13 +183,13 @@ const Power3 = ()=>{
         >
           a<sup>3</sup>
         </button>
-        <button className="bg-orange-500 text-black px-3 py-2 w-1/2 border border-black rounded-md" 
+        <button className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black rounded-md" 
         onClick={allClear}
         >
           All Clear
         </button>
         <button
-          className="bg-orange-500 text-black px-3 py-2 w-1/2 border border-black rounded-md"
+          className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black rounded-md"
           onClick={showResult}
         >
           =
