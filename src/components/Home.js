@@ -62,10 +62,11 @@ const Power3 = ()=>{
     setVal('');
     setResult('')
   };
+  const decimal = '.';
   return (
     <div className="text-lg mx-auto mt-20 flex flex-wrap flex-col w-11/12 md:w-3/5 h-5/6 border border-black bg-gray-700 rounded-md">
     {/* <div className="text-xs text-yellow-400"> This app is developed by Abhishek kumar</div> */}
-      <div className="w-full px-2 h-2/4 text-end flex flex-wrap flex-col pb-10 text-xl"> 
+      <div className="w-full px-2 h-2/4 text-end flex flex-wrap flex-col pb-10 text-xl" id="display"> 
         <div>{arr1}</div> <div>{val}</div> <div>{arr2}</div>
        <div className="mt-4">{result}</div></div>
 
@@ -75,6 +76,7 @@ const Power3 = ()=>{
           className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black"
           onClick={valueChanger}
           value={1}
+          id="one"
         >
           1
         </button>
@@ -82,6 +84,7 @@ const Power3 = ()=>{
           className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black"
           onClick={valueChanger}
           value={2}
+          id="two"
         >
           2
         </button>
@@ -89,6 +92,7 @@ const Power3 = ()=>{
           className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black"
           onClick={valueChanger}
           value={3}
+          id="three"
         >
           3
         </button>
@@ -96,6 +100,7 @@ const Power3 = ()=>{
           className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black"
           onClick={valueChanger}
           value={4}
+          id="four"
         >
           4
         </button>
@@ -103,6 +108,7 @@ const Power3 = ()=>{
           className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black"
           onClick={valueChanger}
           value={5}
+          id="five"
         >
           5
         </button>
@@ -110,6 +116,7 @@ const Power3 = ()=>{
           className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black"
           onClick={valueChanger}
           value={6}
+          id="six"
         >
           6
         </button>
@@ -117,6 +124,7 @@ const Power3 = ()=>{
           className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black"
           onClick={valueChanger}
           value={7}
+          id="seven"
         >
           7
         </button>
@@ -124,6 +132,7 @@ const Power3 = ()=>{
           className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black"
           onClick={valueChanger}
           value={8}
+          id="eight"
         >
           8
         </button>
@@ -131,6 +140,7 @@ const Power3 = ()=>{
           className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black"
           value={9}
           onClick={valueChanger}
+          id="nine"
         >
           9
         </button>
@@ -138,6 +148,7 @@ const Power3 = ()=>{
           className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black"
           value={0}
           onClick={valueChanger}
+          id="zero"
         >
           0
         </button>
@@ -145,6 +156,7 @@ const Power3 = ()=>{
           className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black"
           onClick={methodChanger}
           value={'+'}
+          id="add"
         >
           +
         </button>
@@ -152,6 +164,7 @@ const Power3 = ()=>{
           className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black"
           onClick={methodChanger}
           value={'-'}
+          id="subtrack"
         >
           -
         </button>
@@ -159,6 +172,7 @@ const Power3 = ()=>{
           className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black"
           onClick={methodChanger}
           value={'*'}
+          id="multiply"
         >
           *
         </button>
@@ -166,6 +180,7 @@ const Power3 = ()=>{
           className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black"
           onClick={methodChanger}
           value={'/'}
+          id="divide"
         >
           /
         </button>
@@ -185,12 +200,14 @@ const Power3 = ()=>{
         </button>
         <button className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black rounded-md" 
         onClick={allClear}
+        id="clear"
         >
           All Clear
         </button>
         <button
           className="bg-orange-500 text-black px-3 py-2 w-1/3 border border-black rounded-md"
           onClick={showResult}
+          id="equals"
         >
           =
         </button>
